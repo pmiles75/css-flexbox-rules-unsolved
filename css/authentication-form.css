@@ -12,6 +12,8 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  gap: 25px;
 }
 
 h2 {
@@ -27,6 +29,35 @@ p {
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.form-submit-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.form-group-horizontal-control {
+  display: flex;
+  gap: 15px;
+}
+.form-group-horizontal-control .form-input-control {
+  flex: 1;
+}
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+select {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .subtext {
@@ -37,6 +68,9 @@ form {
 #sign-in,
 #sign-up {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 a {
@@ -46,6 +80,7 @@ a {
 
 label {
   font-weight: bold;
+  padding-bottom: 6px;
 }
 
 input {
